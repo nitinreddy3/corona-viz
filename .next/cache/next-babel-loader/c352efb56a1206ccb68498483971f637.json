@@ -1,0 +1,1 @@
+{"ast":null,"code":"export const COVID_API = \"https://covid19.mathdro.id/api\";","map":{"version":3,"sources":["W:/learning/corona-viz/constants/index.js"],"names":["COVID_API"],"mappings":"AAAA,OAAO,MAAMA,SAAS,GAAG,gCAAlB","sourcesContent":["export const COVID_API = \"https://covid19.mathdro.id/api\""]},"metadata":{},"sourceType":"module"}
