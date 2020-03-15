@@ -15,8 +15,9 @@
   "main": "index.js",
   "devDependencies": {},
   "scripts": {
-    "start": "next",
-    "build": "next build"
+    "dev": "next",
+    "build": "next build && next export",
+    "start": "serve ./out"
   },
   "repository": {
     "type": "git",
