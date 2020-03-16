@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 3);
+/******/ 	return __webpack_require__(__webpack_require__.s = 4);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -2158,9 +2158,31 @@ if (false) {} else {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _utils_useFetch__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../utils/useFetch */ "./utils/useFetch.js");
-/* harmony import */ var _src_Link__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../src/Link */ "./src/Link.js");
-/* harmony import */ var _components_Layout__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/Layout */ "./components/Layout.js");
+/* harmony import */ var _material_ui_core_styles__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @material-ui/core/styles */ "@material-ui/core/styles");
+/* harmony import */ var _material_ui_core_styles__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _material_ui_core_Paper__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @material-ui/core/Paper */ "@material-ui/core/Paper");
+/* harmony import */ var _material_ui_core_Paper__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_Paper__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _material_ui_core_Table__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @material-ui/core/Table */ "@material-ui/core/Table");
+/* harmony import */ var _material_ui_core_Table__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_Table__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _material_ui_core_TableBody__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @material-ui/core/TableBody */ "@material-ui/core/TableBody");
+/* harmony import */ var _material_ui_core_TableBody__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_TableBody__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _material_ui_core_TableCell__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @material-ui/core/TableCell */ "@material-ui/core/TableCell");
+/* harmony import */ var _material_ui_core_TableCell__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_TableCell__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _material_ui_core_TableContainer__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @material-ui/core/TableContainer */ "@material-ui/core/TableContainer");
+/* harmony import */ var _material_ui_core_TableContainer__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_TableContainer__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var _material_ui_core_TableHead__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @material-ui/core/TableHead */ "@material-ui/core/TableHead");
+/* harmony import */ var _material_ui_core_TableHead__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_TableHead__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var _material_ui_core_TablePagination__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @material-ui/core/TablePagination */ "@material-ui/core/TablePagination");
+/* harmony import */ var _material_ui_core_TablePagination__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_TablePagination__WEBPACK_IMPORTED_MODULE_8__);
+/* harmony import */ var _material_ui_core_TableRow__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @material-ui/core/TableRow */ "@material-ui/core/TableRow");
+/* harmony import */ var _material_ui_core_TableRow__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_TableRow__WEBPACK_IMPORTED_MODULE_9__);
+/* harmony import */ var isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! isomorphic-unfetch */ "isomorphic-unfetch");
+/* harmony import */ var isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_10__);
+/* harmony import */ var _src_Link__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../src/Link */ "./src/Link.js");
+/* harmony import */ var _components_Layout__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../components/Layout */ "./components/Layout.js");
+/* harmony import */ var _constants__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../constants */ "./constants/index.js");
+/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! lodash */ "lodash");
+/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_14___default = /*#__PURE__*/__webpack_require__.n(lodash__WEBPACK_IMPORTED_MODULE_14__);
 var _jsxFileName = "W:\\learning\\corona-viz\\pages\\index.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
@@ -2168,23 +2190,200 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 
-const Index = () => {
-  return __jsx(_components_Layout__WEBPACK_IMPORTED_MODULE_3__["default"], {
+
+
+
+
+
+
+
+
+
+
+const useStyles = Object(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_1__["makeStyles"])({
+  root: {
+    width: '100%'
+  },
+  container: {
+    height: 500
+  }
+});
+
+function createData(countryRegion, iso2, confirmed, recovered, deaths) {
+  return {
+    name: countryRegion,
+    code: __jsx("img", {
+      src: `https://www.countryflags.io/${iso2}/flat/64.png`,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 30
+      },
+      __self: this
+    }),
+    confirmed,
+    recovered,
+    deaths
+  };
+}
+
+const Index = props => {
+  const {
+    data
+  } = props;
+  const columns = [{
+    id: 'name',
+    label: 'Name',
+    minWidth: 170
+  }, {
+    id: 'code',
+    label: 'ISO\u00a0Code',
+    minWidth: 100
+  }, {
+    id: 'confirmed',
+    label: 'Confirmed',
+    minWidth: 170
+  }, {
+    id: 'recovered',
+    label: 'Recovered',
+    minWidth: 170
+  }, {
+    id: 'deaths',
+    label: 'Deaths',
+    minWidth: 170
+  }];
+  const [page, setPage] = react__WEBPACK_IMPORTED_MODULE_0___default.a.useState(0);
+  const [rowsPerPage, setRowsPerPage] = react__WEBPACK_IMPORTED_MODULE_0___default.a.useState(10);
+
+  const handleChangePage = (event, newPage) => {
+    setPage(newPage);
+  };
+
+  const handleChangeRowsPerPage = event => {
+    setRowsPerPage(+event.target.value);
+    setPage(0);
+  };
+
+  const classes = useStyles();
+  return __jsx(_components_Layout__WEBPACK_IMPORTED_MODULE_12__["default"], {
     pageTitle: "COVID-19 Global",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 8
+      lineNumber: 67
     },
     __self: undefined
-  }, __jsx(_src_Link__WEBPACK_IMPORTED_MODULE_2__["default"], {
+  }, __jsx(_src_Link__WEBPACK_IMPORTED_MODULE_11__["default"], {
     href: "/covidGlobal",
     color: "secondary",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 9
+      lineNumber: 68
     },
     __self: undefined
-  }, "COVID-19 Global DAta"));
+  }, "COVID-19 Global Data"), __jsx(_material_ui_core_Paper__WEBPACK_IMPORTED_MODULE_2___default.a, {
+    className: classes.root,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 71
+    },
+    __self: undefined
+  }, __jsx(_material_ui_core_TableContainer__WEBPACK_IMPORTED_MODULE_6___default.a, {
+    className: classes.container,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 72
+    },
+    __self: undefined
+  }, __jsx(_material_ui_core_Table__WEBPACK_IMPORTED_MODULE_3___default.a, {
+    stickyHeader: true,
+    "aria-label": "sticky table",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 73
+    },
+    __self: undefined
+  }, __jsx(_material_ui_core_TableHead__WEBPACK_IMPORTED_MODULE_7___default.a, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 74
+    },
+    __self: undefined
+  }, __jsx(_material_ui_core_TableRow__WEBPACK_IMPORTED_MODULE_9___default.a, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 75
+    },
+    __self: undefined
+  }, columns.map(column => __jsx(_material_ui_core_TableCell__WEBPACK_IMPORTED_MODULE_5___default.a, {
+    key: column.id,
+    align: column.align,
+    style: {
+      minWidth: column.minWidth
+    },
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 77
+    },
+    __self: undefined
+  }, column.label)))), __jsx(_material_ui_core_TableBody__WEBPACK_IMPORTED_MODULE_4___default.a, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 87
+    },
+    __self: undefined
+  }, data.slice(page * rowsPerPage, page * rowsPerPage + rowsPerPage).map(row => {
+    return __jsx(_material_ui_core_TableRow__WEBPACK_IMPORTED_MODULE_9___default.a, {
+      hover: true,
+      role: "checkbox",
+      tabIndex: -1,
+      key: row.code,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 90
+      },
+      __self: undefined
+    }, columns.map(column => {
+      const value = row[column.id];
+      return __jsx(_material_ui_core_TableCell__WEBPACK_IMPORTED_MODULE_5___default.a, {
+        key: column.id,
+        align: column.align,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 94
+        },
+        __self: undefined
+      }, column.format && typeof value === 'number' ? column.format(value) : value);
+    }));
+  })))), __jsx(_material_ui_core_TablePagination__WEBPACK_IMPORTED_MODULE_8___default.a, {
+    rowsPerPageOptions: [10, 25, 100],
+    component: "div",
+    count: data.length,
+    rowsPerPage: rowsPerPage,
+    page: page,
+    onChangePage: handleChangePage,
+    onChangeRowsPerPage: handleChangeRowsPerPage,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 105
+    },
+    __self: undefined
+  })));
+};
+
+Index.getInitialProps = async function () {
+  const res = await isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_10___default()(`${_constants__WEBPACK_IMPORTED_MODULE_13__["COVID_API"]}/confirmed`);
+  const data = await res.json();
+  return {
+    data: Object(lodash__WEBPACK_IMPORTED_MODULE_14__["map"])(data, item => {
+      const {
+        countryRegion,
+        iso2,
+        confirmed,
+        recovered,
+        deaths
+      } = item;
+      return createData(countryRegion, iso2, confirmed, recovered, deaths);
+    })
+  };
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Index);
@@ -2359,7 +2558,7 @@ function useFetch(endpoint = '') {
 
 /***/ }),
 
-/***/ 3:
+/***/ 4:
 /*!******************************!*\
   !*** multi ./pages/index.js ***!
   \******************************/
@@ -2404,6 +2603,94 @@ module.exports = require("@material-ui/core/Link");
 
 /***/ }),
 
+/***/ "@material-ui/core/Paper":
+/*!******************************************!*\
+  !*** external "@material-ui/core/Paper" ***!
+  \******************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("@material-ui/core/Paper");
+
+/***/ }),
+
+/***/ "@material-ui/core/Table":
+/*!******************************************!*\
+  !*** external "@material-ui/core/Table" ***!
+  \******************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("@material-ui/core/Table");
+
+/***/ }),
+
+/***/ "@material-ui/core/TableBody":
+/*!**********************************************!*\
+  !*** external "@material-ui/core/TableBody" ***!
+  \**********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("@material-ui/core/TableBody");
+
+/***/ }),
+
+/***/ "@material-ui/core/TableCell":
+/*!**********************************************!*\
+  !*** external "@material-ui/core/TableCell" ***!
+  \**********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("@material-ui/core/TableCell");
+
+/***/ }),
+
+/***/ "@material-ui/core/TableContainer":
+/*!***************************************************!*\
+  !*** external "@material-ui/core/TableContainer" ***!
+  \***************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("@material-ui/core/TableContainer");
+
+/***/ }),
+
+/***/ "@material-ui/core/TableHead":
+/*!**********************************************!*\
+  !*** external "@material-ui/core/TableHead" ***!
+  \**********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("@material-ui/core/TableHead");
+
+/***/ }),
+
+/***/ "@material-ui/core/TablePagination":
+/*!****************************************************!*\
+  !*** external "@material-ui/core/TablePagination" ***!
+  \****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("@material-ui/core/TablePagination");
+
+/***/ }),
+
+/***/ "@material-ui/core/TableRow":
+/*!*********************************************!*\
+  !*** external "@material-ui/core/TableRow" ***!
+  \*********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("@material-ui/core/TableRow");
+
+/***/ }),
+
 /***/ "@material-ui/core/Typography":
 /*!***********************************************!*\
   !*** external "@material-ui/core/Typography" ***!
@@ -2415,6 +2702,17 @@ module.exports = require("@material-ui/core/Typography");
 
 /***/ }),
 
+/***/ "@material-ui/core/styles":
+/*!*******************************************!*\
+  !*** external "@material-ui/core/styles" ***!
+  \*******************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("@material-ui/core/styles");
+
+/***/ }),
+
 /***/ "clsx":
 /*!***********************!*\
   !*** external "clsx" ***!
@@ -2423,6 +2721,28 @@ module.exports = require("@material-ui/core/Typography");
 /***/ (function(module, exports) {
 
 module.exports = require("clsx");
+
+/***/ }),
+
+/***/ "isomorphic-unfetch":
+/*!*************************************!*\
+  !*** external "isomorphic-unfetch" ***!
+  \*************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("isomorphic-unfetch");
+
+/***/ }),
+
+/***/ "lodash":
+/*!*************************!*\
+  !*** external "lodash" ***!
+  \*************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("lodash");
 
 /***/ }),
 

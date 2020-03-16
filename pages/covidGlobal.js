@@ -7,7 +7,6 @@ import { COVID_API } from '../constants'
 
 const CovidGlobal = props => {
   const { pieData } = props;
-  console.log(pieData)
   return (
     <Layout pageTitle="PieChart Representation">
       <Link href="/" color="secondary">
