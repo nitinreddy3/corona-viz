@@ -44580,6 +44580,7 @@ function createData(countryRegion, iso2, confirmed, recovered, deaths) {
       },
       __self: this
     }),
+    id: iso2,
     confirmed: confirmed,
     recovered: recovered,
     deaths: deaths
@@ -44634,7 +44635,7 @@ var Index = function Index(props) {
     pageTitle: "COVID-19 Global",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 67
+      lineNumber: 68
     },
     __self: this
   }, __jsx(_src_Link__WEBPACK_IMPORTED_MODULE_13__["default"], {
@@ -44642,99 +44643,10 @@ var Index = function Index(props) {
     color: "secondary",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 68
+      lineNumber: 69
     },
     __self: this
-  }, "COVID-19 Global Data"), __jsx(_material_ui_core_Paper__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    className: classes.root,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 71
-    },
-    __self: this
-  }, __jsx(_material_ui_core_TableContainer__WEBPACK_IMPORTED_MODULE_8__["default"], {
-    className: classes.container,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 72
-    },
-    __self: this
-  }, __jsx(_material_ui_core_Table__WEBPACK_IMPORTED_MODULE_5__["default"], {
-    stickyHeader: true,
-    "aria-label": "sticky table",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 73
-    },
-    __self: this
-  }, __jsx(_material_ui_core_TableHead__WEBPACK_IMPORTED_MODULE_9__["default"], {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 74
-    },
-    __self: this
-  }, __jsx(_material_ui_core_TableRow__WEBPACK_IMPORTED_MODULE_11__["default"], {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 75
-    },
-    __self: this
-  }, columns.map(function (column) {
-    return __jsx(_material_ui_core_TableCell__WEBPACK_IMPORTED_MODULE_7__["default"], {
-      key: column.id,
-      align: column.align,
-      style: {
-        minWidth: column.minWidth
-      },
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 77
-      },
-      __self: this
-    }, column.label);
-  }))), __jsx(_material_ui_core_TableBody__WEBPACK_IMPORTED_MODULE_6__["default"], {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 87
-    },
-    __self: this
-  }, data.slice(page * rowsPerPage, page * rowsPerPage + rowsPerPage).map(function (row) {
-    return __jsx(_material_ui_core_TableRow__WEBPACK_IMPORTED_MODULE_11__["default"], {
-      hover: true,
-      role: "checkbox",
-      tabIndex: -1,
-      key: row.code,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 90
-      },
-      __self: this
-    }, columns.map(function (column) {
-      var value = row[column.id];
-      return __jsx(_material_ui_core_TableCell__WEBPACK_IMPORTED_MODULE_7__["default"], {
-        key: column.id,
-        align: column.align,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 94
-        },
-        __self: this
-      }, column.format && typeof value === 'number' ? column.format(value) : value);
-    }));
-  })))), __jsx(_material_ui_core_TablePagination__WEBPACK_IMPORTED_MODULE_10__["default"], {
-    rowsPerPageOptions: [10, 25, 100],
-    component: "div",
-    count: data.length,
-    rowsPerPage: rowsPerPage,
-    page: page,
-    onChangePage: handleChangePage,
-    onChangeRowsPerPage: handleChangeRowsPerPage,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 105
-    },
-    __self: this
-  })));
+  }, "COVID-19 Global Data"));
 };
 
 Index.getInitialProps = function _callee() {

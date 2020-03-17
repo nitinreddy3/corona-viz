@@ -13593,7 +13593,7 @@ var MyApp = /*#__PURE__*/function (_App) {
           lineNumber: 23
         },
         __self: this
-      }, "My page"), __jsx("meta", {
+      }, "COVID-19"), __jsx("meta", {
         name: "viewport",
         content: "minimum-scale=1, initial-scale=1, width=device-width",
         __source: {

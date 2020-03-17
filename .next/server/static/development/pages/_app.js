@@ -458,7 +458,7 @@ class MyApp extends next_app__WEBPACK_IMPORTED_MODULE_1___default.a {
         lineNumber: 23
       },
       __self: this
-    }, "My page"), __jsx("meta", {
+    }, "COVID-19"), __jsx("meta", {
       name: "viewport",
       content: "minimum-scale=1, initial-scale=1, width=device-width",
       __source: {

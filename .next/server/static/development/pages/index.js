@@ -2220,6 +2220,7 @@ function createData(countryRegion, iso2, confirmed, recovered, deaths) {
       },
       __self: this
     }),
+    id: iso2,
     confirmed,
     recovered,
     deaths
@@ -2268,7 +2269,7 @@ const Index = props => {
     pageTitle: "COVID-19 Global",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 67
+      lineNumber: 68
     },
     __self: undefined
   }, __jsx(_src_Link__WEBPACK_IMPORTED_MODULE_11__["default"], {
@@ -2276,97 +2277,10 @@ const Index = props => {
     color: "secondary",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 68
+      lineNumber: 69
     },
     __self: undefined
-  }, "COVID-19 Global Data"), __jsx(_material_ui_core_Paper__WEBPACK_IMPORTED_MODULE_2___default.a, {
-    className: classes.root,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 71
-    },
-    __self: undefined
-  }, __jsx(_material_ui_core_TableContainer__WEBPACK_IMPORTED_MODULE_6___default.a, {
-    className: classes.container,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 72
-    },
-    __self: undefined
-  }, __jsx(_material_ui_core_Table__WEBPACK_IMPORTED_MODULE_3___default.a, {
-    stickyHeader: true,
-    "aria-label": "sticky table",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 73
-    },
-    __self: undefined
-  }, __jsx(_material_ui_core_TableHead__WEBPACK_IMPORTED_MODULE_7___default.a, {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 74
-    },
-    __self: undefined
-  }, __jsx(_material_ui_core_TableRow__WEBPACK_IMPORTED_MODULE_9___default.a, {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 75
-    },
-    __self: undefined
-  }, columns.map(column => __jsx(_material_ui_core_TableCell__WEBPACK_IMPORTED_MODULE_5___default.a, {
-    key: column.id,
-    align: column.align,
-    style: {
-      minWidth: column.minWidth
-    },
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 77
-    },
-    __self: undefined
-  }, column.label)))), __jsx(_material_ui_core_TableBody__WEBPACK_IMPORTED_MODULE_4___default.a, {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 87
-    },
-    __self: undefined
-  }, data.slice(page * rowsPerPage, page * rowsPerPage + rowsPerPage).map(row => {
-    return __jsx(_material_ui_core_TableRow__WEBPACK_IMPORTED_MODULE_9___default.a, {
-      hover: true,
-      role: "checkbox",
-      tabIndex: -1,
-      key: row.code,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 90
-      },
-      __self: undefined
-    }, columns.map(column => {
-      const value = row[column.id];
-      return __jsx(_material_ui_core_TableCell__WEBPACK_IMPORTED_MODULE_5___default.a, {
-        key: column.id,
-        align: column.align,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 94
-        },
-        __self: undefined
-      }, column.format && typeof value === 'number' ? column.format(value) : value);
-    }));
-  })))), __jsx(_material_ui_core_TablePagination__WEBPACK_IMPORTED_MODULE_8___default.a, {
-    rowsPerPageOptions: [10, 25, 100],
-    component: "div",
-    count: data.length,
-    rowsPerPage: rowsPerPage,
-    page: page,
-    onChangePage: handleChangePage,
-    onChangeRowsPerPage: handleChangeRowsPerPage,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 105
-    },
-    __self: undefined
-  })));
+  }, "COVID-19 Global Data"));
 };
 
 Index.getInitialProps = async function () {
