@@ -8,8 +8,8 @@ import Copyright from './Copyright';
 const Layout = (props) => {
   const { pageTitle, children } = props;
   return (
-    <Container maxWidth="sm">
-      <Box my={4}>
+    <Container>
+      <Box my={12}>
         <Typography variant="h4" component="h1" gutterBottom>
           {pageTitle}
         </Typography>

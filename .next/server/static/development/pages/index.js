@@ -173,14 +173,13 @@ const Layout = props => {
     children
   } = props;
   return __jsx(_material_ui_core_Container__WEBPACK_IMPORTED_MODULE_2___default.a, {
-    maxWidth: "sm",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 11
     },
     __self: undefined
   }, __jsx(_material_ui_core_Box__WEBPACK_IMPORTED_MODULE_4___default.a, {
-    my: 4,
+    my: 12,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 12
@@ -2160,29 +2159,21 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _material_ui_core_styles__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @material-ui/core/styles */ "@material-ui/core/styles");
 /* harmony import */ var _material_ui_core_styles__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _material_ui_core_Paper__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @material-ui/core/Paper */ "@material-ui/core/Paper");
-/* harmony import */ var _material_ui_core_Paper__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_Paper__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _material_ui_core_Table__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @material-ui/core/Table */ "@material-ui/core/Table");
-/* harmony import */ var _material_ui_core_Table__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_Table__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _material_ui_core_TableBody__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @material-ui/core/TableBody */ "@material-ui/core/TableBody");
-/* harmony import */ var _material_ui_core_TableBody__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_TableBody__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _material_ui_core_TableCell__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @material-ui/core/TableCell */ "@material-ui/core/TableCell");
-/* harmony import */ var _material_ui_core_TableCell__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_TableCell__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var _material_ui_core_TableContainer__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @material-ui/core/TableContainer */ "@material-ui/core/TableContainer");
-/* harmony import */ var _material_ui_core_TableContainer__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_TableContainer__WEBPACK_IMPORTED_MODULE_6__);
-/* harmony import */ var _material_ui_core_TableHead__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @material-ui/core/TableHead */ "@material-ui/core/TableHead");
-/* harmony import */ var _material_ui_core_TableHead__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_TableHead__WEBPACK_IMPORTED_MODULE_7__);
-/* harmony import */ var _material_ui_core_TablePagination__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @material-ui/core/TablePagination */ "@material-ui/core/TablePagination");
-/* harmony import */ var _material_ui_core_TablePagination__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_TablePagination__WEBPACK_IMPORTED_MODULE_8__);
-/* harmony import */ var _material_ui_core_TableRow__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @material-ui/core/TableRow */ "@material-ui/core/TableRow");
-/* harmony import */ var _material_ui_core_TableRow__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_TableRow__WEBPACK_IMPORTED_MODULE_9__);
-/* harmony import */ var isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! isomorphic-unfetch */ "isomorphic-unfetch");
-/* harmony import */ var isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_10__);
-/* harmony import */ var _src_Link__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../src/Link */ "./src/Link.js");
-/* harmony import */ var _components_Layout__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../components/Layout */ "./components/Layout.js");
-/* harmony import */ var _constants__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../constants */ "./constants/index.js");
-/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! lodash */ "lodash");
-/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_14___default = /*#__PURE__*/__webpack_require__.n(lodash__WEBPACK_IMPORTED_MODULE_14__);
+/* harmony import */ var isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! isomorphic-unfetch */ "isomorphic-unfetch");
+/* harmony import */ var isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _src_Link__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../src/Link */ "./src/Link.js");
+/* harmony import */ var _components_Layout__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/Layout */ "./components/Layout.js");
+/* harmony import */ var _constants__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../constants */ "./constants/index.js");
+/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! lodash */ "lodash");
+/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(lodash__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var react_chartkick__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react-chartkick */ "react-chartkick");
+/* harmony import */ var react_chartkick__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(react_chartkick__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var chart_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! chart.js */ "chart.js");
+/* harmony import */ var chart_js__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(chart_js__WEBPACK_IMPORTED_MODULE_8__);
+/* harmony import */ var _material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @material-ui/core/Grid */ "@material-ui/core/Grid");
+/* harmony import */ var _material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_9__);
+/* harmony import */ var _material_ui_core_Paper__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @material-ui/core/Paper */ "@material-ui/core/Paper");
+/* harmony import */ var _material_ui_core_Paper__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_Paper__WEBPACK_IMPORTED_MODULE_10__);
 var _jsxFileName = "W:\\learning\\corona-viz\\pages\\index.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
@@ -2196,107 +2187,132 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 
-
-
-
-
-const useStyles = Object(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_1__["makeStyles"])({
+const useStyles = Object(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_1__["makeStyles"])(theme => ({
   root: {
-    width: '100%'
+    flexGrow: 1
   },
-  container: {
-    height: 500
+  paper: {
+    padding: theme.spacing(2),
+    textAlign: 'center',
+    color: theme.palette.text.secondary
   }
-});
-
-function createData(countryRegion, iso2, confirmed, recovered, deaths) {
-  return {
-    name: countryRegion,
-    code: __jsx("img", {
-      src: `https://www.countryflags.io/${iso2}/flat/64.png`,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 30
-      },
-      __self: this
-    }),
-    id: iso2,
-    confirmed,
-    recovered,
-    deaths
-  };
-}
+}));
 
 const Index = props => {
   const {
-    data
+    linechartData,
+    pieChartData
   } = props;
-  const columns = [{
-    id: 'name',
-    label: 'Name',
-    minWidth: 170
-  }, {
-    id: 'code',
-    label: 'ISO\u00a0Code',
-    minWidth: 100
-  }, {
-    id: 'confirmed',
-    label: 'Confirmed',
-    minWidth: 170
-  }, {
-    id: 'recovered',
-    label: 'Recovered',
-    minWidth: 170
-  }, {
-    id: 'deaths',
-    label: 'Deaths',
-    minWidth: 170
-  }];
-  const [page, setPage] = react__WEBPACK_IMPORTED_MODULE_0___default.a.useState(0);
-  const [rowsPerPage, setRowsPerPage] = react__WEBPACK_IMPORTED_MODULE_0___default.a.useState(10);
-
-  const handleChangePage = (event, newPage) => {
-    setPage(newPage);
-  };
-
-  const handleChangeRowsPerPage = event => {
-    setRowsPerPage(+event.target.value);
-    setPage(0);
-  };
-
   const classes = useStyles();
-  return __jsx(_components_Layout__WEBPACK_IMPORTED_MODULE_12__["default"], {
+  return __jsx(_components_Layout__WEBPACK_IMPORTED_MODULE_4__["default"], {
     pageTitle: "COVID-19 Global",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 68
+      lineNumber: 31
     },
     __self: undefined
-  }, __jsx(_src_Link__WEBPACK_IMPORTED_MODULE_11__["default"], {
-    href: "/covidGlobal",
-    color: "secondary",
+  }, __jsx("div", {
+    className: classes.root,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 69
+      lineNumber: 32
     },
     __self: undefined
-  }, "COVID-19 Global Data"));
+  }, __jsx(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_9___default.a, {
+    container: true,
+    spacing: 3,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 33
+    },
+    __self: undefined
+  }, __jsx(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_9___default.a, {
+    item: true,
+    xs: 12,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 34
+    },
+    __self: undefined
+  }, __jsx(_material_ui_core_Paper__WEBPACK_IMPORTED_MODULE_10___default.a, {
+    className: classes.paper,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 35
+    },
+    __self: undefined
+  }, __jsx(react_chartkick__WEBPACK_IMPORTED_MODULE_7__["LineChart"], {
+    data: linechartData,
+    colors: ["#eb860c", "#e63509", "#0be63b"],
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 36
+    },
+    __self: undefined
+  }))), __jsx(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_9___default.a, {
+    item: true,
+    xs: 12,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 39
+    },
+    __self: undefined
+  }, __jsx(_material_ui_core_Paper__WEBPACK_IMPORTED_MODULE_10___default.a, {
+    className: classes.paper,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 40
+    },
+    __self: undefined
+  }, __jsx(react_chartkick__WEBPACK_IMPORTED_MODULE_7__["PieChart"], {
+    data: pieChartData,
+    colors: ["#eb860c", "#e63509", "#0be63b"],
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 41
+    },
+    __self: undefined
+  }))))));
 };
 
 Index.getInitialProps = async function () {
-  const res = await isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_10___default()(`${_constants__WEBPACK_IMPORTED_MODULE_13__["COVID_API"]}/confirmed`);
+  const res = await isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_2___default()(`${_constants__WEBPACK_IMPORTED_MODULE_5__["COVID_API"]}/daily`);
   const data = await res.json();
+  const totalResponse = await isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_2___default()(_constants__WEBPACK_IMPORTED_MODULE_5__["COVID_API"]);
+  const totalData = await totalResponse.json();
   return {
-    data: Object(lodash__WEBPACK_IMPORTED_MODULE_14__["map"])(data, item => {
-      const {
-        countryRegion,
-        iso2,
-        confirmed,
-        recovered,
-        deaths
-      } = item;
-      return createData(countryRegion, iso2, confirmed, recovered, deaths);
-    })
+    linechartData: [{
+      name: "Confirmed",
+      data: Object(lodash__WEBPACK_IMPORTED_MODULE_6__["chain"])(data).map(item => ({
+        [item.reportDate]: item.totalConfirmed
+      })).reduce((result, item) => {
+        let key = Object.keys(item)[0]; //first property: a, b, c
+
+        result[key] = item[key];
+        return result;
+      }, {}).value()
+    }, {
+      name: "Deaths",
+      data: Object(lodash__WEBPACK_IMPORTED_MODULE_6__["chain"])(data).map(item => ({
+        [item.reportDate]: item.deaths.total
+      })).reduce((result, item) => {
+        let key = Object.keys(item)[0]; //first property: a, b, c
+
+        result[key] = item[key];
+        return result;
+      }, {}).value()
+    }, {
+      name: "Recovered",
+      data: Object(lodash__WEBPACK_IMPORTED_MODULE_6__["chain"])(data).map(item => ({
+        [item.reportDate]: item.recovered.total
+      })).reduce((result, item) => {
+        let key = Object.keys(item)[0]; //first property: a, b, c
+
+        result[key] = item[key];
+        return result;
+      }, {}).value()
+    }],
+    pieChartData: [["Confirmed", totalData.confirmed.value], ["Deaths", totalData.deaths.value], ["Recovered", totalData.recovered.value]]
   };
 };
 
@@ -2506,6 +2522,17 @@ module.exports = require("@material-ui/core/Container");
 
 /***/ }),
 
+/***/ "@material-ui/core/Grid":
+/*!*****************************************!*\
+  !*** external "@material-ui/core/Grid" ***!
+  \*****************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("@material-ui/core/Grid");
+
+/***/ }),
+
 /***/ "@material-ui/core/Link":
 /*!*****************************************!*\
   !*** external "@material-ui/core/Link" ***!
@@ -2528,83 +2555,6 @@ module.exports = require("@material-ui/core/Paper");
 
 /***/ }),
 
-/***/ "@material-ui/core/Table":
-/*!******************************************!*\
-  !*** external "@material-ui/core/Table" ***!
-  \******************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = require("@material-ui/core/Table");
-
-/***/ }),
-
-/***/ "@material-ui/core/TableBody":
-/*!**********************************************!*\
-  !*** external "@material-ui/core/TableBody" ***!
-  \**********************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = require("@material-ui/core/TableBody");
-
-/***/ }),
-
-/***/ "@material-ui/core/TableCell":
-/*!**********************************************!*\
-  !*** external "@material-ui/core/TableCell" ***!
-  \**********************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = require("@material-ui/core/TableCell");
-
-/***/ }),
-
-/***/ "@material-ui/core/TableContainer":
-/*!***************************************************!*\
-  !*** external "@material-ui/core/TableContainer" ***!
-  \***************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = require("@material-ui/core/TableContainer");
-
-/***/ }),
-
-/***/ "@material-ui/core/TableHead":
-/*!**********************************************!*\
-  !*** external "@material-ui/core/TableHead" ***!
-  \**********************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = require("@material-ui/core/TableHead");
-
-/***/ }),
-
-/***/ "@material-ui/core/TablePagination":
-/*!****************************************************!*\
-  !*** external "@material-ui/core/TablePagination" ***!
-  \****************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = require("@material-ui/core/TablePagination");
-
-/***/ }),
-
-/***/ "@material-ui/core/TableRow":
-/*!*********************************************!*\
-  !*** external "@material-ui/core/TableRow" ***!
-  \*********************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = require("@material-ui/core/TableRow");
-
-/***/ }),
-
 /***/ "@material-ui/core/Typography":
 /*!***********************************************!*\
   !*** external "@material-ui/core/Typography" ***!
@@ -2624,6 +2574,17 @@ module.exports = require("@material-ui/core/Typography");
 /***/ (function(module, exports) {
 
 module.exports = require("@material-ui/core/styles");
+
+/***/ }),
+
+/***/ "chart.js":
+/*!***************************!*\
+  !*** external "chart.js" ***!
+  \***************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("chart.js");
 
 /***/ }),
 
@@ -2701,6 +2662,17 @@ module.exports = require("prop-types-exact");
 /***/ (function(module, exports) {
 
 module.exports = require("react");
+
+/***/ }),
+
+/***/ "react-chartkick":
+/*!**********************************!*\
+  !*** external "react-chartkick" ***!
+  \**********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("react-chartkick");
 
 /***/ }),
 
